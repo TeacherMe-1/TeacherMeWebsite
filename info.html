@@ -17,8 +17,8 @@
             <input type="text" id="name" name="name" required placeholder="first_name last_name">
             <label for="grade">Grade and Section:</label>
             <input type="text" id="grade" name="grade" required placeholder="1-section name">
-            <label for="adviser">Adviser:</label>
-            <input type="text" id="adviser" name="adviser" required  placeholder="first_name last_name">
+            <label for="teacher">English subject teacher:</label>
+            <input type="text" id="teacher" name="teacher" required  placeholder="first_name last_name">
 
             <!-- Error Message -->
             <p class="error-message" id="error-message">Please fill out all fields before proceeding.</p>
@@ -32,17 +32,17 @@
                 function validateAndProceed() {
                     const name = document.getElementById("name").value.trim();
                     const grade = document.getElementById("grade").value.trim();
-                    const adviser = document.getElementById("adviser").value.trim();
+                    const teacher = document.getElementById("teacher").value.trim();
 
                     // Check if all fields are filled
-                    if (name === "" || grade === "" || adviser === "") {
+                    if (name === "" || grade === "" || teacher === "") {
                         // Show error message
                         document.getElementById("error-message").style.display = "block";
                     } else {
                         // Save information to localStorage (optional)
                         localStorage.setItem("studentName", name);
                         localStorage.setItem("studentGrade", grade);
-                        localStorage.setItem("studentAdviser", adviser);
+                        localStorage.setItem("studentTeacher", teacher);
 
                         // Redirect to the next page
                         window.location.href = "questions1.html"}
