@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Me - Results</title>
+    <link rel="stylesheet" 
+    href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Teacher Me Heading -->
+        <h1 class="teacher-me-heading">Teacher Me</h1>
+
+        <!-- Results Section -->
+        <div class="results">
+            <h2 class="results-heading">Your Result</h2>
+            <p class="score-display" id="score">Score: /20</p>
+            <p class="feedback" id="feedback">You passed!</p>
+            <p class="motivational-sentence" id="motivational-sentence"></p>
+        </div>
+
+        <!-- Thank You Message -->
+        <p style="color: rgb(226, 190, 31);" class="thank-you-message">Thank you for answering! Please go back to the app and input your score</p>
+    </div>
+
+    <script>
+        // Correct answers (update this based on your quiz)
+        const correctAnswers = {
+            q1: "C", q2: "B", q3: "C", q4: "D", q5: "A", q6: "A", q7: "A", q8: "A",
+            q9: "D", q10: "A", q11: "A", q12: "B", q13: "A", q14: "C", q15: "B",
+            q16: "D", q17: "B", q18: "B", q19: "A", q20: "C"
+        };
+
+        // Calculate score
+        let score = 0;
+        for (let i = 1; i <= 20; i++) {
+            const userAnswer = localStorage.getItem("q" + i); // Retrieve answer from localStorage
+            if (userAnswer === correctAnswers["q" + i]) {
+                score++;
+            }
+        }
+
+        // Display score
+        document.getElementById("score").textContent = "Score: " + score + "/20";
+
+        // Display feedback based on score
+        const getFeedback = (score) => {
+            if (score === 20) {
+                return "Slayable si lodi! Perpuk ka jan beh! 💯❤️‍🔥";
+            } else if (score === 19) {
+                return "One mistake doesn’t define your worth. Pasado ka parin sa puso namin! Keep reading! Since practice makes it perfect. 📕🍀";
+            } else if (score === 18) {
+                return "Two mistakes! Saur saur galing, still so proud of ya! Pasado ka! Keep reading! 📒";
+            } else if (score === 17) {
+                return "Seventeen right here! Luv that for ya, Pasado ka!😘";
+            } else if (score === 16) {
+                return "So galing mu jan! Pasado ka!✨️📚";
+            } else if (score === 15) {
+                return "Galing naman superr! Pasado ka! 📚H ⭐️";
+            } else if (score === 14) {
+                return "Galing, lakas maka silent sanctuary! Continue reading! 📚";
+            } else if (score >= 8 && score <= 13) {
+                return "Kaya mo yan! We believe in ya! Magaling na pero may mas igagaling pa. Continue reading para maging sakses ka eh!🍀";
+            } else if (score >= 0 && score <= 7) {
+                return "Okay lang yan! Take it one step at a time. Don't give up and continue reading! ✨️👌";
+            }
+        };
+
+        // Clear localStorage when the first page loads
+            window.addEventListener("load", () => {
+                localStorage.clear(); // Clear all saved answers
+            });
+
+
+        // Set feedback
+        const feedback = getFeedback(score);
+        document.getElementById("feedback").textContent = feedback;
+
+       
+    </script>
+</body>
+
+</html>

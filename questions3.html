@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Me - Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+
+                /* Your CSS Styles */
+        .error-message {
+            color: #ff0000;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .unanswered {
+            border: 2px solid #ff0000;
+            /* Red border for unanswered questions */
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ede0ab;
+            color: #6C597D;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 style="font-size:medium;" style="color:#D8C26B;">Teacher Me</h2>
+            <div class="passage">
+                <h1 style="text-align: center;">Advantages of Arbitrary Symbols</h1>
+                <p style="text-align: justify;">
+                    <sup>(10)</sup> Another advantage of speech over gesture is obvious; we can use it in the dark! This
+                    enables us to communicate at
+                    night, which not only extends the time available for meaningful communications but may also have proven
+                    decisive in the
+                    competition for space and resources. We of the gentle species Homo sapiens have a legacy of invasion,
+                    having migrated
+                    out of Africa into teritories inhabited by other hominins who migrated earlier. Perhaps it was the
+                    newfound ability to
+                    communicate vocally, without the need for a visual component that enabled our fore-bearers to plan, and
+                    even carry out,
+                    invasion at night, and so vanquish the earlier migrants.
+                </p>
+                <p style="text-align: justify;">
+                    <sup>(11)</sup> It is not only a question of being able to communicate at night. We can also speak to
+                    people when objects intervene
+                    and you can't see them, as when you yell to your friend in another room. All this has to do, of course,
+                    with the nature
+                    of sound itself, which travels equally well in the dark as in the light and wiggles its way around
+                    obstacles. The wall
+                    between you and the base drummer next door may attenuate the sound but does not completely block it.
+                    Vision, on the
+                    other hand, depends on light reflected from an external source, such as the sun, and is therefore
+                    ineffective when no
+                    such source is available. And the light reflected from the surface of an object to your eye travels in
+                    rigidiy straight
+                    lines, which means that it can provide detailed information about shape but is susceptible to occlusion
+                    and
+                    interference. In terms of the sheer ability to reach those with whom you are trying to communicate,
+                    words speak louder
+                    than actions
+                </p>
+    
+                <p style="font-size: small; text-align: left;"><b><i>Number of Words: 173</i></b></p>
+            </div>
+    
+            <div class="questions">
+                <h3>Questions:</h3>
+                <form id="testForm">
+    
+                    <!-- Question 14 -->
+                    <div class="question-container" id="q14-container">
+                        <div class="question">
+                            <p>14. Which is TRUE based on the passage?
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. Vision is necessary when speaking to other people.</span>
+                                <input type="radio" name="q14" value="A">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. When communicating, actions speak louder words.</span>
+                                <input type="radio" name="q14" value="B">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. Speech consists of sound that can travel fast even in
+                                    darkness.</span>
+                                <input type="radio" name="q14" value="C">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">D. Gesture is always needed to complement what we are
+                                    saying.</span>
+                                <input type="radio" name="q14" value="D">
+    
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Question 15 -->
+                    <div class="question-container" id="q15-container">
+                        <div class="question">
+                            <p>15. How is speech an advantage over gesture?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. This enables us to make sounds to be heard.</span>
+                                <input type="radio" name="q15" value="A">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. This enables us to communicate even af night or even when we
+                                    cannot see the people we are talking to due to intervening
+                                    objects.</span>
+                                <input type="radio" name="q15" value="B">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. It is not only about being able to communicate at
+                                    nights.</span>
+                                <input type="radio" name="q15" value="C">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">D. All this has to do with the nature of sound itself.</span>
+                                <input type="radio" name="q15" value="D">
+    
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Question 16 -->
+                    <div class="question-container" id="q16-container">
+                        <div class="question">
+                            <p>16. How did the author develop the 11th or last paragraph?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. By describing and enumerating how vision helps people
+                                    communicate.</span>
+                                <input type="radio" name="q16" value="A">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. By narrating the benefits of using both sounds and vision in
+                                    communication.</span>
+                                <input type="radio" name="q16" value="B">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. By citing the problems when using vision in communicating with
+                                    other people.</span>
+                                <input type="radio" name="q16" value="C">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">D. By comparing and contrasting sound and vision as it relates to
+                                    communication.</span>
+                                <input type="radio" name="q16" value="D">
+    
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Question 17 -->
+                    <div class="question-container" id="q17-container">
+                        <div class="question">
+                            <p>17. Why do you think that the author mentioned that we- Homo sapiens have a legacy of
+                                invasion?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. Our fore-bearers found out the ability to communicate
+                                    vocally.</span>
+                                <input type="radio" name="q17" value="A">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. Our fore-bearers were able to conquer new territories even at
+                                    night.</span>
+                                <input type="radio" name="q17" value="B">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. Our fare-bearers found out the ability to communicate through
+                                    speech.</span>
+                                <input type="radio" name="q17" value="C">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">D. None of the above.</span>
+                                <input type="radio" name="q17" value="D">
+    
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Question 18 -->
+                    <div class="question-container" id="q18-container">
+                        <div class="question">
+                            <p>18. Which of the following situations demonstrate the advantage of speech over gesture?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="q18" value="A">
+                                <span class="option-text">A. A policeman signaling pedestrians to cross street while
+                                    stopping the movement of vehicles.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q18" value="B">
+                                <span class="option-text">B. A mother calling his son who is inside his room upstairs to
+                                    come down for dinner.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q18" value="C">
+                                <span class="option-text">C. A student greeting her teacher with a smile when they meet on
+                                    the corridor.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q18" value="D">
+                                <span class="option-text">D. A political leader shaking the hands of the people after giving
+                                    a speech.</span>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Question 19 -->
+                    <div class="question-container" id="q19-container">
+                        <div class="question">
+                            <p>19. What lesson does this passage teach?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="q19" value="A">
+                                <span class="option-text">A. Speech is advantageous over gesture in the dark.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q19" value="B">
+                                <span class="option-text">B. Gesture is advantageous over speech in the dark.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q19" value="C">
+                                <span class="option-text">C. Speech and gesture are both useful in the dark.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q19" value="D">
+                                <span class="option-text">D. None of the above.</span>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Question 20 -->
+                    <div class="question-container" id="q20-container">
+                        <div class="question">
+                            <p>20. If you are to communicate face to face with someone, which do you think should you use?
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="q20" value="A">
+                                <span class="option-text">A. Vocal communication.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q20" value="B">
+                                <span class="option-text">B. Visual communication.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q20" value="C">
+                                <span class="option-text">C. Vocal and Visual.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q20" value="D">
+                                <span class="option-text">D. Speech over gesture.</span>
+                            </label>
+                        </div>
+                    </div>
+
+    <!-- Previous Button -->
+    <button type="button" onclick="window.location.href='questions2.html'"> Previous</button>
+
+    <!-- Next Button -->
+    <button type="button" onclick="validateAndProceed()">Submit</button>
+    </form>
+    </div>
+    
+    <!-- Error Message -->
+    <p class="error-message" id="error-message">Please answer all questions before proceeding.</p>
+    </div>
+
+    
+    
+    <script>
+        // Function to validate and proceed
+        function validateAndProceed() {
+            const questionContainers = document.querySelectorAll('.question-container');
+            let allAnswered = true;
+
+            // Reset all borders and error message
+            questionContainers.forEach(container => {
+                container.classList.remove('unanswered');
+            });
+            document.getElementById("error-message").style.display = "none";
+
+            // Check if all questions are answered
+            questionContainers.forEach(container => {
+                const questionName = container.id.replace("-container", ""); // e.g., "q1"
+                const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                if (!selectedAnswer) {
+                    allAnswered = false;
+                    container.classList.add('unanswered'); // Highlight unanswered question
+                }
+            });
+            if (allAnswered) {
+
+
+                // Save answers to localStorage
+                questionContainers.forEach(container => {
+                    const questionName = container.id.replace("-container", "");
+                    const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`).value;
+                    localStorage.setItem(questionName, selectedAnswer);
+                });
+
+                // Redirect to the next page
+                window.location.href = "results.html"; // Update to the next page
+            } else {
+                // Show error message
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+
+        
+
+        // Save answers to localStorage when a radio button is selected
+        document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+            radio.addEventListener("change", (event) => {
+                const questionName = event.target.name; // e.g., "q1", "q2"
+                const selectedAnswer = event.target.value; // e.g., "A", "B"
+                localStorage.setItem(questionName, selectedAnswer);
+            });
+        });
+
+        // Load saved answers when the page loads
+        window.addEventListener("load", () => {
+            document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+                const questionName = radio.name;
+                const savedAnswer = localStorage.getItem(questionName);
+                if (savedAnswer === radio.value) {
+                    radio.checked = true; // Restore the selected answer
+                }
+            });
+        });
+    </script>
+    </body>
+    
+    </html>
+

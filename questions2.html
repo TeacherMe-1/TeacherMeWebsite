@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Me - Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+
+        /* Your CSS Styles */
+        .error-message {
+            color: #ff0000;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .unanswered {
+            border: 2px solid #ff0000;
+            /* Red border for unanswered questions */
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ede0ab;
+            color: #6C597D;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 style="font-size:medium;">Teacher Me</h2>
+            <div class="passage">
+                <h1 style="text-align: center;">Advantages of Arbitrary Symbols</h1>
+                <p style="text-align: justify;">
+                    <sup>(6)</sup> One possible advantage of vocal language is its arbitrariness. Except in rare cases of
+                    onomatopoeia, spoken words
+                    cannot be iconic, and they therefore offer scope for creating symbols that distinguish between object or
+                    actions that
+                    look alike or might otherwise be confusable. The names of similar animals, such as cats, lions, tigers,
+                    cheetahs,
+                    lynxes, and leopards. are rather different. We may be confused as to which animals is which, but at
+                    least it is clear
+                    which one we are talking about. The shortening of words overtime also makes communication more
+                    efficient, and some of us
+                    have been around long enough to see this happen: television has become TV or telly, microphone has been
+                    reduced to mike
+                    (or mic), and so on. The fact that more frequent words tends to be shorter than less frequent ones was
+                    noted by the
+                    American philologist George Kingsley Zipf, who related it to a principle of "least effort." So long as
+                    signs are based
+                    on iconic resemblance, the signer has little scope for these kinds of calibration.
+    
+                <p style="font-size: small; text-align: left;"><b><i>Number of Words: 173</i></b></p>
+            </div>
+    
+            <div class="questions">
+                <h3>Questions:</h3>
+                <form id="testForm">
+    
+                    <!-- Question 9 -->
+                    <div class="question-container" id="q9-container">
+                        <div class="question">
+                            <p>9. Which word best defines arbitrary?
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. Confusable.</span>
+                                <input type="radio" name="q9" value="A">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. Efficient.</span>
+                                <input type="radio" name="q9" value="B">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. Iconic.</span>
+                                <input type="radio" name="q9" value="C">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">D. Random.</span>
+                                <input type="radio" name="q9" value="D">
+    
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- Question 10 -->
+                    <div class="question-container" id="q10-container">
+                        <div class="question">
+                            <p>10. Which best describes a philologist?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. One who studies human speech especially historical and
+                                    comparative linguistics.</span>
+                                <input type="radio" name="q10" value="A">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. Bone who seeks wisdom or enlightenment.</span>
+                                <input type="radio" name="q10" value="B">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. One who studies the theology dealing with the origin, nature,
+                                    and destiny of human beings.</span>
+                                <input type="radio" name="q10" value="C">
+    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">D. One who studies the life processes especially of an organism or
+                                    group.</span>
+                                <input type="radio" name="q10" value="D">
+    
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 11 -->
+                    <div class="question-container" id="q11-container">
+                        <div class="question">
+                            <p>11. Why do you think that arbitrariness is considered an advantage of vocal language?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. Shortening words makes communication more efficient.</span>
+                                <input type="radio" name="q11" value="A">
+                    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. The names of similar animals are different.</span>
+                                <input type="radio" name="q11" value="B">
+                    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. Spoken words cannot be iconic.</span>
+                                <input type="radio" name="q11" value="C">
+                    
+                            </label>
+                            <label class="option">
+                                <span class="option-text"> D. Some of us have been around long enough to see this happen.</span>
+                                <input type="radio" name="q11" value="D">
+                    
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 12 -->
+                    <div class="question-container" id="q12-container">
+                        <div class="question">
+                            <p>12. From the passage, what word/s offer scope for creating symbols that distinguish between object or actions
+                                that look
+                                alike or might otherwise be confusable?
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <span class="option-text">A. Confusable.</span>
+                                <input type="radio" name="q12" value="A">
+                    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">B. Arbitary symbols.</span>
+                                <input type="radio" name="q12" value="B">
+                    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">C. Onomatopoeia.</span>
+                                <input type="radio" name="q12" value="C">
+                    
+                            </label>
+                            <label class="option">
+                                <span class="option-text">D. Iconic.</span>
+                                <input type="radio" name="q12" value="D">
+                    
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 13 -->
+                    <div class="question-container" id="q13-container">
+                        <div class="question">
+                            <p>13. What is referred to the principle of "least effort"?</p>
+                        </div>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="q13" value="A">
+                                <span class="option-text">A. Frequent words are shortened for less effort.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q13" value="B">
+                                <span class="option-text">B. The signer has little scope for these kinds of calibration.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q13" value="C">
+                                <span class="option-text">C. More frequent words tend to be shorter than less frequent words.</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q13" value="D">
+                                <span class="option-text">D. It is clear which word we are talking about.</span>
+                            </label>
+                        </div>
+                    </div>
+
+    <!-- Previous Button -->
+    <button type="button" onclick="window.location.href='questions1.html'"> Previous</button>
+
+
+    <!-- Next Button -->
+    <button type="button" onclick="validateAndProceed()">Next</button>
+    </form>
+    </div>
+    
+    <!-- Error Message -->
+    <p class="error-message" id="error-message">Please answer all questions before proceeding.</p>
+    </div>
+    
+    <script>
+        // Function to validate and proceed
+        function validateAndProceed() {
+            const questionContainers = document.querySelectorAll('.question-container');
+            let allAnswered = true;
+
+            // Reset all borders and error message
+            questionContainers.forEach(container => {
+                container.classList.remove('unanswered');
+            });
+            document.getElementById("error-message").style.display = "none";
+
+            // Check if all questions are answered
+            questionContainers.forEach(container => {
+                const questionName = container.id.replace("-container", ""); // e.g., "q1"
+                const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                if (!selectedAnswer) {
+                    allAnswered = false;
+                    container.classList.add('unanswered'); // Highlight unanswered question
+                }
+            });
+
+            if (allAnswered) {
+                // Save answers to localStorage
+                questionContainers.forEach(container => {
+                    const questionName = container.id.replace("-container", "");
+                    const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`).value;
+                    localStorage.setItem(questionName, selectedAnswer);
+                });
+
+
+                // Redirect to the next page
+                window.location.href = "questions3.html"; // Update to the next page
+            } else {
+                // Show error message
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+
+
+
+       
+
+
+        // Save answers to localStorage when a radio button is selected
+        document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+            radio.addEventListener("change", (event) => {
+                const questionName = event.target.name; // e.g., "q1", "q2"
+                const selectedAnswer = event.target.value; // e.g., "A", "B"
+                localStorage.setItem(questionName, selectedAnswer);
+            });
+        });
+
+        // Load saved answers when the page loads
+        window.addEventListener("load", () => {
+            document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+                const questionName = radio.name;
+                const savedAnswer = localStorage.getItem(questionName);
+                if (savedAnswer === radio.value) {
+                    radio.checked = true; // Restore the selected answer
+                }
+            });
+        });
+    </script>
+    </body>
+    
+    </html>

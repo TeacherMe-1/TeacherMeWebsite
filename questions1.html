@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Me - Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        /* Your CSS Styles */
+        .error-message {
+            color: #ff0000;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .unanswered {
+            border: 2px solid #ff0000;
+            /* Red border for unanswered questions */
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ede0ab;
+            color: #6C597D;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="font-size:medium; font-family: 'Poppins', sans-serif; text-align:left;">Teacher Me</h2>
+        <div class="passage">
+            <h1 style="text-align: center;">From Hand to Mouth</h1>
+            <p style="text-align: justify;">
+                <sup style="font-family: 'Poppins', sans-serif;" >(1)</sup> Imagine trying to teach a child to talk without using your hands or any other means of
+                pointing gesturing. The task
+                would surely be impossible. There can be little doubt that bodily gestures are involved in the
+                development of language,
+                both in the individual and in the species. Yet, once the system is up and running, it can function
+                entirely on
+                vocalizations, as when two friends chat over the phone and create in each other's minds a world of
+                events far removed
+                from the actual sounds that emerge from their lips. My contention is that the vocal element emerged
+                relatively late in
+                hominid evolution. If the modern chimpanzee is to be our guide, the common ancestor of 5 or 6 million
+                years ago would
+                have been utterly incapable of a telephone conversation but would have been able to make voluntary
+                movements of hands
+                and face that could the least serve as a platform upon which to build a language.
+            </p>
+            <p style="text-align: justify;">
+                <sup style="font-family: 'Poppins', sans-serif;">(2)</sup> Evidence suggests that the vocal machinery necessary for autonomous speech developed
+                quite recently in hominid
+                evolution. Grammatical language may well have begun to emerge around 2 million years ago but would at
+                first have
+                been primary gestural, though no doubt punctuated with grunts and other vocal cries that were at first
+                largely
+                involuntary and emotional The complex adjustments necessary to produce speech as we know it today would
+                have taken some time to
+                evolve, and may not have been complete until some 170.000 years ago. or even later, when Homo sapiens
+                emerged to
+                grace the planet. These adjustments may have been incomplete even in our close relatives the
+                Neanderthals, arguably, it
+                was this failure that contributed to their demise
+            </p>
+            <p style="text-align: justify;">
+                <sup style>(3)</sup> The question now is what were the selective pressures that led to the eventual
+                dominance of speech? On the face of it, on acoustic medium seems a poor way to convey information about
+                the world: not for nothing is it said that a
+                picture is worth a thousand words. Moreover, sign language has all the lexical and grammatical
+                complexity of spoken
+                language. Primate evolution is itselt a testimony to the primacy of the visual world. We share with
+                monkeys a highly
+                sophisticated visual system, giving us three-dimension information in colour about us, and on intricate
+                system for exploring that
+                world through movement and manipulation.
+            </p>
+            <p style="font-size: small; text-align: left;"><b><i>Number of Words: 386 </i></b></p>
+        </div>
+
+        <div class="questions">
+            <h3>Questions:</h3>
+            <form id="testForm">
+                <!-- Question 1 -->
+                <div class="question-container" id="q1-container">
+                    <div class="question">
+                        <p>1. What helped in the development of language before people could communicate through speech?
+                        </p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="A">
+                            <span class="option-text">A. Writing.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="B">
+                            <span class="option-text">B. Reading.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="C">
+                            <span class="option-text">C. Gestures.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="D">
+                            <span class="option-text">D. Facial expression.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Repeat for other questions (Q2 to Q8) -->
+                <!-- Question 2 -->
+                <div class="question-container" id="q2-container">
+                    <div class="question">
+                        <p> 2. According to the passage, which of the following developed last?</p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <span class="option-text">A. Sign Language.</span>
+                            <input type="radio" name="q2" value="A">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">B. Vocal Elements.</span>
+                            <input type="radio" name="q2" value="B">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">C. Grunts.</span>
+                            <input type="radio" name="q2" value="C">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">D. Gestures.</span>
+                            <input type="radio" name="q2" value="D">
+                
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-container" id="q3-container">
+                    <div class="question">
+                        <p>3. Who do you think deserves recognition for the emergence of grammatical language?</p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <span class="option-text">A. Primates.</span>
+                            <input type="radio" name="q3" value="A">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">B. Neanderthals.</span>
+                            <input type="radio" name="q3" value="B">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">C. Homo sapiens.</span>
+                            <input type="radio" name="q3" value="C">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">D. All of the three.</span>
+                            <input type="radio" name="q3" value="D">
+                
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-container" id="q4-container">
+                    <div class="question">
+                        <p>4. As can be inferred from the passage, what could be a cause of the Neanderthal's demise?</p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <span class="option-text">A. They were part of the evolution.</span>
+                            <input type="radio" name="q4" value="A">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">B. They failed to understand one another.</span>
+                            <input type="radio" name="q4" value="B">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">C. They started fighting amongst themselves.</span>
+                            <input type="radio" name="q4" value="C">
+                
+                        </label>
+                        <label class="option">
+                            <span class="option-text">D. They were not able to develop their own speech.</span>
+                            <input type="radio" name="q4" value="D">
+                
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question-container" id="q5-container">
+                    <div class="question">
+                        <p>5. How do you relate the visual world to the emergence of grammatical language?</p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="A">
+                            <span class="option-text">A. Visual world involves the use of gestures, movements of hands and face as the
+                                beginning of the grammatical language.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="B">
+                            <span class="option-text">B. Visual world involves vocal machinery.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="C">
+                            <span class="option-text">C. Visual world involves the visual system of the monkeys.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="D">
+                            <span class="option-text">D. All of the above.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question-container" id="q6-container">
+                    <div class="question">
+                        <p>6. Why do you think language was a development later than gesture or signed language?</p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q6" value="A">
+                            <span class="option-text">A. Voluntary movements are easier and faster learnt than talking.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="B">
+                            <span class="option-text">B. Talking is faster learnt than voluntary movements.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="C">
+                            <span class="option-text">C. There is no certain reason.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="D">
+                            <span class="option-text">D. All of the above.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question-container" id="q7-container">
+                    <div class="question">
+                        <p>7. What makes us different from the other primates based from the text?</p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q7" value="A">
+                            <span class="option-text">A. They are primitive and stereotyped-and noisy and we are not.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q7" value="B">
+                            <span class="option-text">B. We are smarter than them.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q7" value="C">
+                            <span class="option-text">C. We share with monkeys a highly sophisticated visual system.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q7" value="D">
+                            <span class="option-text">D. All of the above.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question-container" id="q8-container">
+                    <div class="question">
+                        <p>8. How does speech benefit us?</p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q8" value="A">
+                            <span class="option-text">A. It enables us to communicate with others.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="B">
+                            <span class="option-text">B. It makes communication less effective.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="C">
+                            <span class="option-text">C. It functions entirely on vocalization.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="D">
+                            <span class="option-text">D. It helps us in improving sign language..</span>
+                        </label>
+                    </div>
+                </div>
+
+
+        <!-- Next Button -->  
+                <button type="button" onclick="validateAndProceed()">Next</button>'
+            </form>
+        </div>
+
+        <!-- Error Message -->
+        <p class="error-message" id="error-message">Please answer all questions before proceeding.</p>
+    </div>
+
+    <script>
+        // Function to validate and proceed
+        function validateAndProceed() {
+            const questionContainers = document.querySelectorAll('.question-container');
+            let allAnswered = true;
+
+            // Reset all borders and error message
+            questionContainers.forEach(container => {
+                container.classList.remove('unanswered');
+            });
+            document.getElementById("error-message").style.display = "none";
+
+            // Check if all questions are answered
+            questionContainers.forEach(container => {
+                const questionName = container.id.replace("-container", ""); // e.g., "q1"
+                const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                if (!selectedAnswer) {
+                    allAnswered = false;
+                    container.classList.add('unanswered'); // Highlight unanswered question
+                }
+            });
+            if (allAnswered) {
+
+
+                // Save answers to localStorage
+                questionContainers.forEach(container => {
+                    const questionName = container.id.replace("-container", "");
+                    const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`).value;
+                    localStorage.setItem(questionName, selectedAnswer);
+                });
+
+                // Redirect to the next page
+                window.location.href = "questions2.html"; // Update to the next page
+            } else {
+                // Show error message
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+
+
+
+        
+
+
+
+
+        // Save answers to localStorage when a radio button is selected
+        document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+            radio.addEventListener("change", (event) => {
+                const questionName = event.target.name; // e.g., "q1", "q2"
+                const selectedAnswer = event.target.value; // e.g., "A", "B"
+                localStorage.setItem(questionName, selectedAnswer);
+            });
+        });
+
+        // Load saved answers when the page loads
+        window.addEventListener("load", () => {
+            document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+                const questionName = radio.name;
+                const savedAnswer = localStorage.getItem(questionName);
+                if (savedAnswer === radio.value) {
+                    radio.checked = true; // Restore the selected answer
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
